@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;1,100&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+*{
+	font-family: 'Roboto', sans-serif;
+	font-family: 'Ubuntu', sans-serif;
+}
+
+/* COLORS & BACKGROUNDS */
+.txt-primary{
+	color:#231F20 !important;
+}
+
+.bg-primary{
+	background: #231F20 !important;
+}
+
+/* TEXT AND TYPOGRAPHY */
+.txt-sm{
+	font-size:13px;
+}
+
+.txt-md{
+	font-size:15px;
+}
+
+.txt-lg{
+	font-size:20px;
+}
+
+.txt-xlg{
+	font-size:25px;
+}
+
+.txt-xxlg{
+	font-size:30px;
+}
+
+.logo{
+	width:auto;
+	height: fit-content;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.wrapper{
+	width:90% !important;
+	margin: auto;
+}
+
+.nav-item{
+	text-decoration: none;
+	padding-top: 1%;
+}
+
+.svg-icons{
+	width: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/* Search box start */
+.has-search .form-control {
+    padding-left: 2.375rem;
+	font-size: 13px;
+	padding-top:1%;
+	padding-bottom:1%;
+}
+
+.has-search .form-control-feedback {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    width: 2.375rem;
+    height: 2.375rem;
+    line-height: 2.375rem;
+    text-align: center;
+    pointer-events: none;
+    color: #aaa;
+	font-size: 13px;
+}
+
+.has-search input{
+	width:100%;
+	background: #F2F2F2 !important;
+	border-radius: 6px !important;
+	border: none !important;
+	outline: none !important;
+}
+
+.has-search input:focus{
+	outline: none !important;
+	border: none !important;
+}
+/* Search box end */
+
+select .selectpicker{
+	border: none !important;
+}
+
+.hero-section{
+	height: 600px !important;
+	background: url('assets/imgs/Hero Image.png');
+	position: relative;
+  	color: white;
+	/* width: 100%; */
+}
+
+.hero-content{
+	position: absolute;
+  	bottom: 8px;
+  	left: 10%;
+}
+
+.hero-title{
+	font-style: normal;
+	font-weight: 700;
+	font-size: 110px;
+	line-height: 160px;
+	color: #FFFFFF;
+}
+
+.hero-cta{
+	color: #231F20;
+}
+
