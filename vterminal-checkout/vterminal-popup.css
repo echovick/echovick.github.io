@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;1,100&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+*{
+	box-sizing: border-box;
+}
+
+body{
+	background-color: #edeef6;
+	font-family: 'Ubuntu', sans-serif;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+	margin:0;
+}
+
+button{
+	background-color: #00214A;
+	color:#ffffff;
+	border: 0;
+	box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+	border-radius: 5px;
+	padding:10px 25px;
+	font-size: 14px;
+}
+
+.modal-container{
+	top: 0;
+	position: fixed;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	background: rgba(170, 174, 178, 0.4);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	opacity: 0;
+	pointer-events: none;
+	transition: opacity 1s ease;
+}
+
+.modal-container.show, .spinner.show{
+	opacity: 1;
+	pointer-events: auto;
+}
+
+.modal{
+	background-color: #FFFFFF;
+	border-radius: 5px;
+	padding:30px 40px;
+	width: 384px;
+	height: 404px;
+	box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+	max-width: 100%;
+	text-align: center;
+}
+
+.spinner{
+	position: fixed;
+	opacity: 0;
+	pointer-events: none;
+	transition: opacity 1s ease;
+	margin-left: auto;
+	margin-right: auto;
+	width: auto;
+	display:inline;
+}
+
+.modal p {
+	opacity: 0.7;
+	font-size: 14px;
+}
+
+.open.hide{
+	display: none;
+}
+
+.vmodal-header{
+	display: flex;
+	justify-content: space-between;
+}
+
+.vmodal-header img{
+	width: auto;
+}
+
+.vmodal-header p {
+	text-align: right;
+	font-size: 12px;
+	vertical-align: text-top !important;
+	margin-top: -1px;
+}
+
+.vt-token-box{
+	color: #ffffff;
+	width: 100px;
+	background: rgba(0, 33, 74, 0.9);
+	border-radius: 3px;
+	font-weight: bold;
+	margin: 0 auto;
+	margin-top: 10%;
+}
+
+.vt-token-box p {
+	padding: 7px 7px;
+}
+
+h4{
+	font-style: normal;
+	font-weight: bold;
+	font-size: 14px;
+	line-height: 15px;
+	text-align: center;
+	color: #00214A;
+	margin-top: 12%;
+}
+
+.vt-text-desctiption{
+	font-style: normal;
+	font-weight: 300;
+	font-size: 12px !important;
+	line-height: 14px;
+	text-align: center;
+	color: #1D1C1C;
+}
+
+input{
+	background: #E0E0E0;
+	border-radius: 5px;
+	width: 100%;
+	border: none;
+	padding: 15px 15px;
+	outline: none;
+}
+
+.vt-button-group{
+	display: flex;
+	justify-content: space-between;
+	margin-top: 8%;
+}
+
+.vt-button-group button{
+	width:50%;
+}
+
+.vt-btn-outline{
+	background-color: white;
+	border: 1px solid #00214A;
+	color: #00214A;
+	margin-left: 5%;
+}
+
+.vt-license{
+	display: flex;
+	justify-content: center;
+	padding-top: 4%;
+}
